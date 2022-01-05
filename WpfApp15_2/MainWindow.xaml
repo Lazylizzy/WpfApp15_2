@@ -1,0 +1,89 @@
+﻿<Window x:Class="WpfApp15_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp15_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph>
+                    Практическое руководство.
+                    <Hyperlink NavigateUri="https://docs.microsoft.com/ru-ru/dotnet/desktop/wpf/graphics-multimedia/how-to-create-a-shape-by-using-a-pathgeometry?view=netframeworkdesktop-4.8">Создание фигуры с помощью PathGeometry</Hyperlink>
+                </Paragraph>
+                <Paragraph>
+                    В этом примере показано, как создать фигуру с помощью PathGeometry класса. PathGeometry объекты состоят из одного или нескольких PathFigure объектов; каждый из них PathFigure представляет отдельную фигуру или форму. Каждый из них PathFigure состоит из одного или нескольких PathSegment объектов, каждый из которых представляет собой подключенную часть рисунка или фигуры. Типы сегментов включают:
+                </Paragraph>
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            LineSegment
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            ArcSegment
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            BezierSegment
+                        </Paragraph>
+                    </ListItem>
+
+                </List>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Название фигуры
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Описание
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Треугольник
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+
+                                    Path Stroke="Black" StrokeThickness="1</Paragraph>
+                                <Paragraph>Path.Data</Paragraph>
+                                    <Paragraph>PathGeometry</Paragraph>
+                                    <Paragraph>PathGeometry.Figures</Paragraph>
+                                <Paragraph>PathFigureCollection</Paragraph>
+                                <Paragraph>PathFigure IsClosed="True" StartPoint="10,100"</Paragraph>
+                                <Paragraph>PathFigure.Segments</Paragraph>
+                                <Paragraph>PathSegmentCollection</Paragraph>
+                                <Paragraph>LineSegment Point="100,100"</Paragraph>
+                                <Paragraph>LineSegment Point="100,50"</Paragraph>
+                                <Paragraph>PathSegmentCollection</Paragraph>
+                                <Paragraph>PathFigure.Segments</Paragraph>
+                                <Paragraph>PathFigure</Paragraph>
+                                <Paragraph>PathFigureCollection</Paragraph>
+                                <Paragraph>PathGeometry.Figures</Paragraph>
+                                <Paragraph>PathGeometry</Paragraph>
+                                <Paragraph>Path.Data</Paragraph>
+                                <Paragraph>Path</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
